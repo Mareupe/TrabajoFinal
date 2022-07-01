@@ -1,0 +1,442 @@
+:root{
+    --very-light-pink:#C7C7C7;
+    --white: #FFFFFF;
+    --text-input-field: #f7f7f7;
+    --black: #000000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 100px;
+    text-align: center;
+}
+
+html{
+    font-size: 85%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@media (max-width: 650px){
+    .logo{
+        display: block;
+    }
+}
+
+.container-login .close{
+    width: 15px;
+    margin: 15px 15px;
+    position:absolute;
+    top:0;
+    right:0;  
+    cursor:pointer ;
+}
+
+.container-login-form .logo{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.login-form label {
+    height: 20px;
+    position: absolute;
+    display: block;
+    font-weight: bold;
+    margin-left: 25vw;
+}
+
+.login-form .input.input-password{
+    width: 50%;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    color: var(--very-light-pink);
+    margin: 20px 20px;
+    padding-left: 8px;
+}
+
+.login-form .input.input-email{
+    width: 50%;
+    height: 40px;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    color: var(--very-light-pink);
+    margin: 20px 20px;
+    padding-left: 8px;
+}
+
+.login-form .login-button{
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 45px;
+    background: var(--hospital-green);
+    color: var(--white);
+    font-weight: bold;
+    font-family: "Quicksand";
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    display: block;
+    cursor: pointer;
+}
+
+.login-form .link-recover.password{
+    text-decoration: none;
+    color: var(--hospital-green);
+    margin-top: 40px;
+    display: block;
+}
+
+.container-login .login-form .signup-button{
+    height: 45px;
+    background: var(--white);
+    border: 2px solid var(--hospital-green);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Quicksand";
+    margin-top: 35px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 190px;
+    color:var(--hospital-green);
+    display: block;
+    cursor:pointer ;
+}
+
+
+.container-recovery .close{
+    position: absolute;
+    margin: 15px 15px;
+    width: 15px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.form-container-recovery .logo{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    align-self: center;
+}
+
+.form-container-recovery h3{
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+
+.form-recovery p{
+    color: var(--very-light-pink);
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.form-recovery label{
+    position: absolute;
+    display: block;
+    font-weight: bold;
+    margin-left: 25vw;
+}
+
+.form-recovery .input.input-email{
+    height: 40px;
+    width: 50%;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    border:0;    
+    color: var(--very-light-pink);  
+    padding-left: 8px;
+    margin:20px 20px;
+    
+}
+
+.form-recovery  .submit-button{
+    height: 45px;
+    background: var(--hospital-green);
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Quicksand";
+    margin-top: 35px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.form-recovery  .submit-button{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.form-recovery  .link-back-to-login{
+    text-decoration: none;
+    color: var(--hospital-green);
+    margin-top: 40px;
+    display: block;
+}
+
+
+.icons-logos-account{
+    width: 100%;
+    height: 35px;
+    margin-top: -90px;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: 0;
+    box-shadow: 0px 4px 8px 0px rgba(89, 73, 30, 0.20);
+}
+
+.icons-logos-account .shopping{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.icons-logos-account .menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.icons-logos-account .logo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 140px;
+    justify-self: center;
+}
+
+.form-container-account h3{
+    height: 20px;
+    font-weight: bold ;
+    text-align: left;
+    margin:45px 25vw ;
+    margin-top: 70px;
+}
+
+.form-account .input.input-name{
+    height: 40px;
+    width: 50%;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    border:0;    
+    color: var(--very-light-pink);  
+    padding-left: 8px;
+    margin:20px 20px;
+}
+
+.form-account .input.input-email{
+    height: 40px;
+    width: 50%;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    border:0;    
+    color: var(--very-light-pink);  
+    padding-left: 8px;
+    margin:20px 20px;
+    
+}
+
+
+.form-account .input.input-password{
+    height: 40px;
+    width: 50%;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    border:0;    
+    color: var(--very-light-pink);  
+    padding-left: 8px;
+    margin:20px 20px;
+}
+
+
+.form-account label {
+    height: 20px;
+    font-weight: bold ;
+    position: absolute;
+    display: block;
+    margin-left: 25vw;
+}
+
+.form-account  .create-account-button{
+    height: 45px;
+    background: var(--hospital-green);
+    border: 0;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Quicksand";
+    margin-top: 35px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    color: var(--white);
+    margin-top: 150px;
+    cursor: pointer;
+
+}
+
+.icons-logos-home{
+    display: grid;
+    grid-template-columns:50px auto 50px;
+    grid-template-rows: 0;
+    width: 100%;
+    margin-top: -90px;
+    height: 35px;
+    box-shadow: 0px 4px 8px 0px rgba(89,73,30,0.20);
+}
+
+.icons-logos-home .shopping{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: center;
+    cursor:pointer ;
+}
+
+.icons-logos-home .menu{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: center;
+    cursor:pointer ;
+}
+
+.icons-logos-home .logo{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: center;
+    cursor:pointer ;
+}
+
+.search-product .input.input-search{
+    height: 40px;
+    width: 90%;
+    border-radius: 4px;
+    background-color: var(--text-input-field);
+    border:0;    
+    color: var(--very-light-pink);  
+    padding-left: 35px;
+    margin:20px 20px;
+    background-image: url(./assets/icons/icons/icon_search.png);
+    background-repeat: no-repeat ;
+    background-position:left;
+    background-size: 20px;
+    background-position-x: 10px;
+}
+
+
+.options-for-view{
+    display: flex;
+    overflow-x: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 15px 0 15px;
+}
+
+.options-for-view a{
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: var(--very-light-pink);
+}
+
+.options-for-view .all{
+    width: 50px;
+    height: 37px;
+    align-items: center;
+    border: 2px solid var(--hospital-green);
+    border-radius: 8px;
+    background: var(--white);
+    color: var(--hospital-green);
+}
+
+.items-order{
+    width: 180px;
+    height: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-image: url(./assets/icons/icons/icon-fecla-hacia-abajo.png);
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: 11px;
+    background-size: 10px;
+    cursor:pointer ;
+}
+.items-order p{
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--dark);
+}
+
+.items-order b{
+    margin-left: 10px;
+    color: var(--black);
+} 
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-items{
+    width: 190px;
+    height: 140px;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    margin-left: 5px;
+    cursor:pointer ;
+}
+
+.container-items img{
+    border-radius: 30px;
+    width: 100%;
+}
+
+.container-items .text-description{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.container-items .add-to-cart{
+    width: 40px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -35px;
+    box-shadow: 0 0 5px rgba(0 , 0, 0, .5);
+}
+
+.container-items .added-to-cart{
+    width: 40px;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -35px;
+    box-shadow: 0 0 5px rgba(0 , 0, 0, .5);
+    
+}
